@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var prefix = "js/";
+        var scriptList = ["script.js", "menu.js", "slider.js", "lazyload.js", "show.js", "tab.js", "form.js", "cookies.js"]
+        if(navigator.userAgent.indexOf('MSIE') > -1 || navigator.userAgent.indexOf('Trident') > -1){
+            prefix += "ie/"
+        }
+        for(i=0; i < scriptList.length; i++){
+            var script = document.createElement("script");
+            script.setAttribute("src", prefix + scriptList[i]);
+            document.head.appendChild(script);
+        }
+    </script>
+    <link rel="stylesheet" href="style/css/show.css">
+    <title>Playground | Alessandro Miele</title>
+</head>
+
+<body>
+
+    <!--menu-->
+    <div class="menu transition-05" data-show="from-top">
+        <img src="img/logo-playground-white.png" class="menu-logo" alt="">
+        <!--desktop-->
+        <div class="link-container-desktop"></div>
+        <!--mobile-->
+        <p class="menu-mobile-icon menu-item">menu</p>
+        <div class="link-container-mobile"></div>
+    </div>
+
+    <!--slider-->
+    <div class="slider">
+        <!--nav-->
+        <button class="nav-arrow prev">&#x276E;</button>
+        <div class="nav-dots"></div>
+        <button class="nav-arrow next">&#x276F;</button>
+        <!--slider element-->
+        <div class="slider-element transition-1" data-show="from-top" style="background-image: url(img/slide-hello.jpg)">
+            <div>
+                <h1 class="slider-title">Lorem <br> Ipsum.</h1>
+                <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem
+                    veniam
+                    atque inventore hic</p>
+            </div>
+        </div>
+        <!--slider element-->
+        <div class="slider-element transition-1" style="background-image: url(img/slide-circle.jpg)">
+            <div>
+                <h1 class="slider-title">Lorem <br> Ipsum.</h1>
+                <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem
+                    veniam
+                    atque inventore hic</p>
+            </div>
+        </div>
+        <!--slider element-->
+        <div class="slider-element transition-1" style="background-image: url(img/slide-play.jpg)">
+            <div>
+                <h1 class="slider-title">Lorem <br> Ipsum.</h1>
+                <p class="slider-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur rem
+                    veniam
+                    atque inventore hic</p>
+            </div>
+        </div>
+    </div>
+
+    <!--cards-->
+    <div class="cards-container flex center">
+        <!--card-->
+        <div class="card transition-1" data-show="flip-x">
+            <div class="card-title" style="background-image: url(img/card-play-harder.png)"></div>
+            <div class="card-text-container">
+                <p>Aenean mollis dolor a mattis viverra. In hac habitasse platea dictumst. Curabitur tempus dui tortor,
+                    et
+                    bibendum lacus eleifend ut.</p>
+            </div>
+            <a href="">read more</a>
+        </div>
+        <!--card-->
+        <div class="card transition-1" data-show-delay="100" data-show="flip-x">
+            <div class="card-title" style="background-image: url(img/card-simplicity.png)"></div>
+            <div class="card-text-container">
+                <p>Donec vitae augue tellus. Proin et urna sit amet metus fermentum dapibus non quis urna.</p>
+            </div>
+            <a href="">read more</a>
+        </div>
+        <!--card-->
+        <div class="card transition-1" data-show-delay="200" data-show="flip-x">
+            <div class="card-title" style="background-image: url(img/card-innovation.png)"></div>
+            <div class="card-text-container">
+                <p>Suspendisse vehicula, lectus sed molestie aliquam, arcu neque gravida lacus.</p>
+            </div>
+            <a href="">read more</a>
+        </div>
+    </div>
+
+    <!--banner-->
+    <div class="banner flex transition-1" data-show="opacity" data-lazy-back="img/banner-we-are.jpg">
+        <div class="banner-side transition-1" data-show="from-right" id="we-are">
+            <div class="banner-content">
+                <h1 class="banner-title">we <br> are.</h1>
+                <p class="banner-text">Consectetur adipiscing elit. <br>
+                    Nulla condimentum tortor sem.</p>
+                <a href="" class="banner-link">the players &#x276F;</a>
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner banner-left flex transition-1" data-show="opacity" data-lazy-back="img/banner-we-do.jpg">
+        <div class="banner-side banner-white transition-1" data-show="from-left" id="we-do">
+            <div class="banner-content">
+                <h1 class="banner-title banner-title-white">we <br> do.</h1>
+                <p class="banner-text banner-text-white">Consectetur adipiscing elit. <br>
+                    Nulla condimentum tortor sem.</p>
+                <a href="" class="banner-link banner-link-white">the projects &#x276F;</a>
+            </div>
+        </div>
+    </div>
+    <!--banner-->
+    <div class="banner flex transition-1" data-show="opacity" data-lazy-back="img/banner-carrers.jpg">
+        <div class="banner-side transition-1" data-show="from-right" id="careers">
+            <div class="banner-content">
+                <h1 class="banner-title">carreers.</h1>
+                <p class="banner-text">Consectetur adipiscing elit. <br>
+                    Nulla condimentum tortor sem.</p>
+                <a href="" class="banner-link">the positions &#x276F;</a>
+            </div>
+        </div>
+    </div>
+
+    <!--tab-->
+    <div class="tab-section">
+        <div class="tab-container flex center">
+            <div class="tab-title-container">
+                <p class="tab-title active-tab transition-1" data-show="from-left" data-tab="tab1">
+                </p>
+                <p class="tab-title transition-1" data-show="from-left" data-show-delay="100" data-tab="tab2">
+                </p>
+                <p class="tab-title transition-1" data-show="from-left" data-show-delay="200" data-tab="tab3">
+                </p>
+            </div>
+            <div class="tab-text-container transition-1" data-show="flip-x">
+                <p class="tab-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!--contact form-->
+    <div class="contact-form-section" id="contact-us">
+        <div class="flex">
+            <!--info-->
+            <div class="contact-info transition-1" data-show="flip-y">
+                <h1 class="contact-title">contact <br> us.</h1>
+                <p>
+                    Playground srl <br>
+                    Via G. Mazzini 3/C, <br>
+                    Cernusco Sul Naviglio (Milano) <br>
+                    - <br>
+                    <a href="#" style="color: #ffffffa6;">T +39 0240706003</a>
+                </p>
+            </div>
+            <!--form-->
+            <form class="contact-form transition-1" data-show="from-right" id="form" action="index.html">
+                <!--name-->
+                <input class="form-input form-input-50" 
+                type="text" 
+                name="name" 
+                placeholder="name"
+                pattern="^[A-Za-z]{3,20}"
+                data-error-message="utilizza solo lettere, non usare spazi o altri simboli.">
+                <!--last name-->
+                <input class="form-input form-input-50" 
+                type="text" 
+                name="last-name" 
+                placeholder="last name"
+                pattern="^[A-Za-z]{3,20}"
+                data-error-message="utilizza solo lettere, non usare spazi o altri simboli.">
+                <!--email-->
+                <input class="form-input" 
+                type="text" 
+                name="email" 
+                placeholder="email*"
+                required
+                pattern="[A-Za-z0-9._-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                data-error-message="utilizza un formato email valido.">
+                <!--text-->
+                <textarea class="form-input form-text-area" 
+                name="message" 
+                placeholder="message*"
+                cols="30"
+                rows="10"
+                required
+                data-error-message="non sono ammessi caratteri speciali. Solamente il punto, la virgola e gli spazi."
+                ></textarea>
+                <!--form erro-->
+                <p class="form-error"></p>
+                <!--submit-->
+                <input class="form-input form-submit" id="form-button" type="submit" value="send &#x276F;">
+            </form>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <img class="footer-logo" src="img/logo-playground-white.png" alt="">
+        <div class="flex center">
+            <a href="" class="footer-link">we are</a>
+            <a href="" class="footer-link">we do</a>
+            <a href="" class="footer-link">careers</a>
+            <a href="" class="footer-link">contact us</a>
+        </div>
+        <div class="flex center">
+            <a href="" class="footer-social fa fa-facebook"></a>
+            <a href="" class="footer-social fa fa-instagram"></a>
+            <a href="" class="footer-social fa fa-linkedin"></a>
+        </div>
+    </div>
+</body>
+
+</html>

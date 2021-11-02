@@ -1,0 +1,27 @@
+*{
+    overflow-x: hidden;
+}
+*[data-show]{
+    opacity: 0;
+}
+*[data-show="opacity"]{
+    opacity: 0 !important;
+}
+*[data-show="flip-y"]{
+    transform: rotateY(90deg)
+}
+*[data-show="flip-x"]{
+    transform: rotateX(90deg)
+}
+*[data-show="from-left"]{
+    transform: translateX(-100%);
+}
+*[data-show="from-right"]{
+    transform: translateX(100%);
+}
+*[data-show="from-bottom"]{
+    transform: translateY(100%);
+}
+*[data-show="from-top"]{
+    transform: translateY(-100%);
+}
