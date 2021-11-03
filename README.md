@@ -6,7 +6,7 @@ Come richiesto, non ho utilizzato librerie css.
 Visto che solo il codice scritto da me verrà valutato, ho evitato di usare librerie JS.  
 Ogni componente è stato scritto ex novo per questa pagina.  
   
-## form contatti 
+## Form contatti 
 Nella pagina test (che potete trovare al link qui sopra) il form dei contatti ritornerà sempre errore.  
 Questo perchè ho gestito il controllo dei campi lato JS con una funzione di errore personalizzata.  
 In questa maniera potete vedere come ho integrato la soluzione sul form.
